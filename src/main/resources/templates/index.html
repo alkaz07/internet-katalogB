@@ -15,6 +15,15 @@
         <td>
             <a th:href="@{/product/{id}(id=${product.id})}" th:text="${product.name}">Название товара</a>
         </td>
+        <td>
+            /prodInfo?id=<span th:text="${product.id}"/>
+        </td>
+        <td>
+            <a th:href="@{'/prodInfo?id=' + ${product.id}}"> жамк</a>
+        </td>
+        <td>
+            <a th:href="@{'/deleteProd?id=' + ${product.id}}"> УДАЛИТЬ</a>
+        </td>
     </tr>
 </table>
 </body>
