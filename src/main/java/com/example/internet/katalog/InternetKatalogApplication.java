@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class InternetKatalogApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(InternetKatalogApplication.class, args);
 	}
 

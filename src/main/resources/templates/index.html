@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Каталог товаров</title>
+</head>
+<body>
+<h1>Список товаров</h1>
+<table border="1">
+    <tr>
+        <th>Название товара</th>
+    </tr>
+    </tr>
+    <tr th:each="product : ${products}">
+        <td>
+            <a th:href="@{/product/{id}(id=${product.id})}" th:text="${product.name}">Название товара</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>
