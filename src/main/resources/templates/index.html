@@ -1,10 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Каталог товаров</title>
 </head>
 <body>
+фильтры
+<form action="/filter">
+    <input type="checkbox" checked="checked" name="withImg">
+    <input type="checkbox" checked="checked" name="withOutImg">
+    <input type="submit" title="применить">
+</form>
+<p th:each="type: ${types}">
+    <a th:href="@{/type/{type}(type=${type})}" th:text="${type}">тип</a>
+</p>
+
 <h1>Список товаров</h1>
 <table border="1">
     <tr>
