@@ -19,8 +19,9 @@ public class ProductService {
     public ProductService() {
         System.out.println("создается ProductService");
         products.add(new Product(1, "Микроволновка \"Победа\""));
-        products.add(new Product(2, "Холодильник \"Атлант\""));
+        products.add(new Product(2, "Холодильник \"Атлант\"", "/images/1694731089_balthazar-club-p-skulptura-derzhashchaya-potolok-instagram-10.jpg"));
         products.add(new Product(3, "Стиральная машина \"Zanussi\""));
+        products.add(new Product(4, "Раб лампы", "/images/WIN_20241115_17_47_33_Pro.jpg" ));
     }
 
     public Product getProductById(int id) {
